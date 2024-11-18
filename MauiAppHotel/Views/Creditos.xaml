@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Créditos"
+             Title="Créditos"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Azure">
+
+    <VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Text="Sobre"
+               FontFamily="OpenSansSemibold"
+               FontSize="Title"
+               TextColor="{StaticResource Primary}" />
+
+            <Label Text="Aplicativo com o objetivo de facilitar a reserva de quartos em um hotel fictício. Parte das atividades realizadas no curso de Desenvolvimento de Sistemas."
+               FontFamily="OpenSansRegular"
+               FontSize="25"
+               TextColor="{StaticResource Black}" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Spacing="5"
+            Margin="0,25,0,0">
+
+            <Label Text="Créditos"
+        FontSize="Subtitle"
+        TextColor="{StaticResource Primary}"/>
+
+            <Label Text="Rafael dos Santos Rocha"
+        FontFamily="OpenSansRegular"
+        FontSize="18"
+        TextColor="{StaticResource Black}" />
+
+            <HorizontalStackLayout
+                Spacing="7"
+                >
+
+                <Label Text="Ano: "
+                    FontFamily="OpenSansRegular"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource Black}" />
+
+                <Label Text="2024"
+                       FontSize="18"
+                       TextColor="{StaticResource Black}"
+                       FontFamily="OpenSansRegular"/>
+            </HorizontalStackLayout>
+
+
+        </VerticalStackLayout>
+        <Button VerticalOptions="End" Text="Voltar" Clicked="Button_Clicked" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
